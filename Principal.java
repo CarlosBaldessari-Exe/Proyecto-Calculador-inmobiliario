@@ -14,7 +14,8 @@ public class Principal {
         menuText.put(4, "Calcular IRPF");
         menuText.put(5, "Calcular ITP");
         menuText.put(6, "Calcular comisión del 3% sobre el precio de la casa");
-        menuText.put(7, "Salir");
+        menuText.put(7, "Calcular Rentabilidad anual");
+        menuText.put(8, "Salir");
 
         Map<Integer, MenuOption> options = new LinkedHashMap<>();
         options.put(1, new CalcularComisionVenta());
@@ -23,7 +24,8 @@ public class Principal {
         options.put(4, new CalcularIRPF());
         options.put(5, new CalcularITP());
         options.put(6, new CalcularComisionTresPorciento());
-
+        options.put(7, new CalcularRentabilidadAnual());
+        
         while (true) {
             System.out.println("\nIngrese la opción deseada:");
             for (Map.Entry<Integer, String> e : menuText.entrySet()) {
