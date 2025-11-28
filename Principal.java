@@ -34,7 +34,7 @@ public class Principal {
 
             try {
                 int opcion = sc.nextInt();
-                if (opcion == 7) {
+                if (opcion == 8) {
                     System.out.println("Saliendo del programa...");
                     sc.close();
                     System.exit(0);
